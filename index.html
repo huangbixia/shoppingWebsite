@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>菜菜网上菜市场</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cityselect.css">
+</head>
+<body>
+<!-- header -->
+  <div id="container">
+        <div class="top-box">
+          <div class="top-box-left">
+              <span>欢迎光临菜菜网！</span>
+              <span><a href="">收藏本网站</a></span>
+              <span>配送城市：<a><input type="text" class="cityinput" id="citySelect" placeholder="广州"></a></span>
+          </div>
+          <div class="top-box-right">
+              <span><a href="#">[请登录]</a></span>
+              <span><a href="#">[免费注册]</a></span>
+              <span><a href="#">我的菜菜</a></span>
+              <span><a href="#">在线客服</a></span>
+          </div>
+      </div>
+  <div class=" header">
+      <div class="bottom-box">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="search-box">
+          <label><input type="text" placeholder="输入搜索内容"><input type="button" value="搜索"></label>
+        </div>
+        <div class="shopCart"><span><img src="images/shopCart.png"></span><span>购物车</span></div>
+        <div class="shopCart-info">
+            <p>当前购物车为空！</p>
+            <p><input type="button" value="进入购物车"></p>
+        </div>
+      </div>
+  </div>
+
+<!-- 轮播-->
+<div class="menuBannerBoc">
+<div class="bannerbox">
+    <div id="focus">
+        <ul>
+            <li><a href="#" target="_blank">
+                <img src="images/bn1.jpg" alt="" /></a>
+            </li>
+            <li><a href="#" target="_blank">
+                <img src="images/bn2.jpg" alt="" /></a></li>
+            <li><a href="#" target="_blank">
+                <img src="images/bn3.jpg" alt="" /></a></li>
+            <li><a href="#" target="_blank">
+                <img src="images/bn4.jpg" alt="" /></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 侧栏菜单 -->
+<div class="menu-box">
+    <span>商品分类</span>
+    <ul>
+        <li class="first-menu">
+            <img src="images/menu1.png"><span>蔬菜水果</span>
+            <ul class="second-menu">
+                <li><a href="#">水果</a></li>
+                <li><a href="#">叶菜花菜</a></li>
+                <li><a href="#">根茎芽菜</a></li>
+                <li><a href="#">瓜果茄</a></li>
+                <li><a href="#">豆类</a></li>
+                <li><a href="#">腌菜</a></li>
+                <li><a href="#">菇菌</a></li>
+            </ul>
+        </li>
+        <li class="first-menu">
+            <img src="images/menu2.png"><span>肉禽水产</span>
+            <ul class="second-menu">
+                <li><a href="#">猪肉类</a></li>
+                <li><a href="#">鸡鸭类</a></li>
+                <li><a href="#">牛羊肉</a></li>
+                <li><a href="#">水产海鲜</a></li>
+                <li><a href="#">蛋品</a></li>
+                <li><a href="#">肉制品</a></li>
+            </ul>
+        </li>
+        <li class="first-menu">
+            <img src="images/menu3.png"><span>粮油干货</span>
+            <ul class="second-menu">
+                <li><a href="#">米类</a></li>
+                <li><a href="#">面粉制品</a></li>
+                <li><a href="#">油类</a></li>
+                <li><a href="#">五谷杂粮</a></li>
+                <li><a href="#">豆制品</a></li>
+                <li><a href="#">干货汤料</a></li>
+            </ul>
+        </li>
+        <li class="first-menu">
+            <img src="images/menu4.png"><span>厨房调料</span>
+            <ul class="second-menu">
+                <li><a href="#">盐糖味精</a></li>
+                <li><a href="#">酱醋</a></li>
+                <li><a href="#">料酒香油</a></li>
+            </ul>
+        </li>
+        <li class="first-menu">
+            <img src="images/menu5.png"><span>牛奶酒水</span>
+        </li>
+        <li class="first-menu">
+            <img src="images/menu6.png"><span>地方特产</span>
+        </li>
+    </ul>
+</div>
+</div>
+<!-- active menu-->
+<div class="active-menu">
+    <a href="#"><div class="activity-box">
+        <img src="images/newstore%20.jpg">
+        <div class="activity-info">
+            新店专区<br/>
+            <p>更多优惠等着你！</p>
+        </div>
+    </div></a>
+    <a href="#"><div class="activity-box">
+        <img src="images/health.jpg">
+        <div class="activity-info">
+            保健养身课堂<br/>
+           <p> 如何吃得更健康？</p>
+        </div>
+    </div></a>
+        <a href="#"><div class="activity-box">
+        <img src="images/caipu.jpg">
+        <div class="activity-info">
+            推荐菜谱<br/>
+            <p>美味停不下来！</p>
+        </div>
+    </div></a>
+            <a href="#"><div class="activity-box">
+        <img src="images/newgoods.jpg">
+        <div class="activity-info">
+            新品上市<br/>
+            <p>新生活当然少不了新产品！</p>
+        </div>
+    </div></a>
+</div>
+<div style="clear: both;"></div>
+
+<!--商品展示楼层-->
+<div class="goodsContainer">
+    <div class="goodsFloor">
+        <h3>新鲜水果</h3>
+        <div class="adBox">
+           <a href="#">
+               <img src="images/goodsPic/ad1.jpg"/>
+           </a>
+        </div>
+        <ul class="goodsBox">
+            <li>
+            <a href="#">
+                <img src="images/goodsPic/fruit1.jpg"/>
+                <h4>新奇士 美国柠檬</h4>
+                <div class="goodsInfo">
+                    <span class="goodsPrice">￥20</span>
+                    <span><input type="button" value="购买" class="buyBtn"/></span>
+                </div>
+            </a>
+        </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="goodsFloor">
+        <h3>新鲜水果</h3>
+        <div class="adBox">
+            <a href="#">
+                <img src="images/goodsPic/ad2.jpg"/>
+            </a>
+        </div>
+        <ul class="goodsBox">
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="goodsFloor">
+        <h3>新鲜水果</h3>
+        <div class="adBox">
+            <a href="#">
+                <img src="images/goodsPic/ad3.jpg"/>
+            </a>
+        </div>
+        <ul class="goodsBox">
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="goodsFloor">
+        <h3>新鲜水果</h3>
+        <div class="adBox">
+            <a href="#">
+                <img src="images/goodsPic/ad4.jpg"/>
+            </a>
+        </div>
+        <ul class="goodsBox">
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit4.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="goodsFloor">
+        <h3>新鲜水果</h3>
+        <div class="adBox">
+            <a href="#">
+                <img src="images/goodsPic/ad5.jpg"/>
+            </a>
+        </div>
+        <ul class="goodsBox">
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/goodsPic/fruit1.jpg"/>
+                    <h4>新奇士 美国柠檬</h4>
+                    <div class="goodsInfo">
+                        <span class="goodsPrice">￥20</span>
+                        <span><input type="button" value="购买" class="buyBtn"/></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<!--底部介绍栏-->
+<div class="introduction-box">
+  <ul>
+      <li>
+          <div><img src="images/xinxian.png"></div>
+          <div><span>新鲜优质</span><span>先进保鲜技术，精挑细选</span></div>
+      </li>
+      <li>
+          <div><img src="images/shangmen.png"></div>
+          <div><span>送货上门</span><span>快准好的一流配送团队</span></div>
+      </li>
+      <li>
+          <div><img src="images/price.png"></div>
+          <div><span>天天低价</span><span>优惠价格天天有，惊喜不断</span></div>
+      </li>
+      <li>
+          <div><img src="images/zhonglei.png"></div>
+          <div><span>品种繁多</span><span>上千家入驻商家，上万种商品</span></div>
+      </li>
+  </ul>
+</div>
+<div class="link-box">
+   <div class="link-title">
+       <div><img src="images/zhinan.png"><span>新手指南</span></div>
+      <ul>
+          <li><a href="#">账户注册</a></li>
+          <li><a href="#">商家入驻申请</a></li>
+          <li><a href="#">订购方式</a></li>
+          <li><a href="#">购物流程</a></li>
+      </ul>
+   </div>
+    <div class="link-title">
+        <div><img src="images/pay.png"><span>付款方式</span></div>
+        <ul>
+            <li><a href="#">支付方式/发票说明</a></li>
+            <li><a href="#">储值卡说明</a></li>
+            <li><a href="#">优惠码/礼品卡说明</a></li>
+            <li><a href="#">代付方式</a></li>
+        </ul>
+    </div>
+    <div class="link-title">
+        <div><img src="images/peisong.png"><span>配送方式</span></div>
+        <ul>
+            <li><a href="#">配送运费</a></li>
+            <li><a href="#">配送范围</a></li>
+            <li><a href="#">配送时间</a></li>
+            <li><a href="#">配送团队</a></li>
+        </ul>
+    </div>
+    <div class="link-title">
+        <div><img src="images/contact.png"><span>售后服务</span></div>
+        <ul>
+            <li><a href="#">退货政策</a></li>
+            <li><a href="#">退货流程</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">投诉与建议</a></li>
+        </ul>
+    </div>
+    <div class="link-title">
+        <div><img src="images/us.png"><span>关于我们</span></div>
+        <ul>
+            <li><a href="#">公司介绍</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">业务合作</a></li>
+        </ul>
+    </div>
+<div style="clear:both;"></div>
+<div class=" footer">
+  <span>粤ICP备092222215号 Copyright © 2016- XXXXX电子商务有限公司版权所有</span>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/cityselect.js"></script>
+<script type="text/javascript">
+    var test=new Vcity.CitySelector({input:'citySelect'});
+</script>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

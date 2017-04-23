@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head></head>
+<style type="text/css">
+.container
+{
+  border:1px red solid;
+  height:400px;
+  width:1160px;
+  overflow:hidden;
+}
+.container .imgBox
+{
+ position:absolute;
+ width:1160px;
+}
+ul li
+{
+   list-style:none;
+   display:inline-block;
+   height:50px;
+   width:200px;
+   border: 1px solid blue;
+}
+</style>
+<script type="text/javascript">
+  window.onload = function()
+  {
+     var ulBox = document.getElementsByTagName("ul")[0];
+     var allLi = ulBox.getElementsByTagName("li");
+	 var allImgBox = document.getElementsByClassName("imgBox");
+     var j=0;
+
+    for(var i=0;i<allLi.length;i++)
+   {
+      allLi[i].index = i;
+      allLi[i].onmouseover = function()
+	  {
+	    
+	  };
+   }	
+  };
+</script>
+<body>
+<div class="container">
+<div class="imgBox"><img src="bn1.jpg"></div>
+<div class="imgBox"><img src="bn2.jpg"></div>
+<div class="imgBox"><img src="bn3.jpg"></div>
+</div>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+</body>
+</html> 
