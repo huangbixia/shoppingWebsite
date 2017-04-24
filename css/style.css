@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+body
+{
+    background: #f8f8f8;
+}
 #container
 {
     width:1368px;
@@ -345,17 +349,18 @@ img
 .goodsFloor
 {
     width: 100%;
-    height: auto;
+    height: 680px;
 }
 .adBox
 {
     float: left;
     width:275px;
+    margin-right:1px;
 }
 .adBox img
 {
     width:275px;
-    height: 552px;
+    height: 592px;
 }
 .goodsBox
 {
@@ -368,18 +373,65 @@ img
     list-style: none;
     display: block;
     float: left;
-    width:243px;
+    width:242px;
+    background: white;
+}
+.goodsBox li a
+{
+    text-decoration: none;
+    color: #7d7d7d;
+}
+.goodsBox li h4
+{
+   margin-left:20px;
 }
 .goodsBox li img
 {
-    width:240px;
+    width:230px;
     height:auto;
+    margin-left:5px;
+}
+.goodsInfo
+{
+    color: #42d13a;
+    font-size:18px;
+    font-weight: bolder;
+    height:45px;
+    line-height: 45px;
+}
+.goodsInfo .goodsPrice
+{
+    margin-left:20px;
+}
+.goodsFloor h3
+{
+    margin:10px 20px;
+    font-size: 25px;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+;
 }
     /*------µ◊≤øΩÈ…‹¿∏----*/
 .introduction-box
 {
-    width: 1250px;
     margin: 20px auto;
+    background: #efefef;
+    text-align: center;
+}
+.goodsBox li input[type="button"]
+{
+    border:1px solid #10ad66;
+    color: #10ad66;
+    background: white;
+    width:80px;
+    font-weight: bold;
+    height:25px;
+    margin-left:80px;
+    cursor: pointer;
+}
+.goodsBox li input[type="button"]:hover
+{
+    background: #10ad66;
+    color: white;
 }
 .introduction-box ul li
 {
