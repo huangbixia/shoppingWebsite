@@ -90,4 +90,64 @@ window.onload = function(){
             $(".activity-info:eq("+i+")").animate({bottom:"-250px"},300);
         });
     });
+
+    /**---------商品栏-----------**/
+    $(".goodsBox").each(function(){
+        $(this).find("li").each(function(index){
+            //去掉重叠的边
+            if(index!=3&&index!=7)
+            {
+                $(this).css("borderRight","0");
+            }
+            if(index<4)
+            {
+                $(this).css("borderBottom","0");
+            }
+
+            //鼠标悬浮商品特效
+           $(this).find("img").hover(function(){
+                $(this).animate({marginLeft:"0"});
+           },function(){
+               $(this).animate({marginLeft:"5px"});
+           });
+        });
+    });
+
+    //楼层标题颜色变换
+    var goodsFloorTitle = $(".goodsFloor").find("h3");
+    var titleColor = ["#3fae29","#5494d6","#f5af08","#df38ee","#ee3838"];
+    for(var i=0;i<goodsFloorTitle.length;i++)
+    {
+        $(goodsFloorTitle[i]).css({color:titleColor[i]});
+    }
+
+    /*-------------左侧楼层导航栏-------------*/
+    $(".floorNav:eq(0)").find("a").each(function(index){
+        $(this).css("background",titleColor[index]);
+
+        var pic = $(this).find("img");
+        $(this).hover(function(){
+            $(this).text($(goodsFloorTitle).eq(index).text().substring(2));
+        },function(){
+            $(this).text("");
+            $(this).append(pic);
+        });
+    });
 };
+
+/*----------左侧楼层导航栏随之滚动隐或现--------------*/
+$(function(){
+    $(window).scroll(function(){
+        var toTop = $(this).scrollTop();
+        if(toTop>=650){
+            $(".floorMenuBox").show();
+        }
+        else
+        {
+            $(".floorMenuBox").hide();
+        }
+    });
+});
+$(function(){
+
+});
